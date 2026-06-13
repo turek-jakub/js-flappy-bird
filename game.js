@@ -139,11 +139,12 @@ gameOver.image.onload = () => {
     y: canvas.height / 2 - gameOver.image.height / 2 - 150,
   };
 };
+
 const message = new Sprite("assets/UI/message.png");
 message.image.onload = () => {
   message.position = {
-    x: canvas.width / 2 - gameOver.image.width / 2,
-    y: canvas.height / 2 - gameOver.image.height / 2 - 150,
+    x: canvas.width / 2 - message.image.width / 2,
+    y: canvas.height / 2 - message.image.height / 2,
   };
 };
 
