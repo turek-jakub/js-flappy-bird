@@ -1,6 +1,8 @@
 # JavaScript Flappy Bird
 A simple minigame created in HTML Canvas and vanilla JavaScript as part of the AGH Web Development course.
 
+The project is published on GitHub Pages and can be played [here](https://turek-jakub.github.io/js-flappy-bird/).
+
 <p align="center">
   <img width="404" height="661" alt="Flappy Bird showcase" src="https://github.com/user-attachments/assets/93e0fa38-5b96-42dc-933e-5c8f54270c89" />
 </p>
