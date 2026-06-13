@@ -244,24 +244,27 @@ let wing = 0;
 function handleKeyDown(event) {
   if (event.code === "Space") {
     event.preventDefault();
-
-    if (bird != undefined && bird.alive) {
-      bird.velocity = -300;
-      wing = 1 - wing;
-      if (wing) {
-        audioWing.currentTime = 0;
-        audioWing.play();
-      } else {
-        audioSwoosh.currentTime = 0;
-        audioSwoosh.play();
-      }
-    }
-
-    if (!begin) begin = true;
+    action();
   }
+}
+
+function action() {
+  if (bird != undefined && bird.alive) {
+    bird.velocity = -300;
+    wing = 1 - wing;
+    if (wing) {
+      audioWing.currentTime = 0;
+      audioWing.play();
+    } else {
+      audioSwoosh.currentTime = 0;
+      audioSwoosh.play();
+    }
+  }
+  if (!begin) begin = true;
 }
 window.requestAnimationFrame(update);
 document.addEventListener("keydown", handleKeyDown);
+document.addEventListener("click", action);
 
 addPipes(300);
 
