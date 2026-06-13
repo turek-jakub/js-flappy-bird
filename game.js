@@ -264,7 +264,7 @@ function action() {
 }
 window.requestAnimationFrame(update);
 document.addEventListener("keydown", handleKeyDown);
-document.addEventListener("click", action);
+document.addEventListener("pointerdown", action);
 
 addPipes(300);
 
