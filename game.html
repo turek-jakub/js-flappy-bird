@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      zz canvas {
+        width: 288px;
+        height: 512px;
+      }
+      #game-over {
+        color: white;
+        font-family: Verdana;
+        font-size: 12px;
+        position: absolute;
+        background-color: rgb(253, 178, 39);
+        width: 230px;
+        height: 250px;
+        top: 160px;
+        left: 38px;
+        opacity: 0.9;
+        border-width: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-start;
+        row-gap: 0px;
+
+        visibility: hidden;
+      }
+      #game-over h1 {
+        height: 10px;
+      }
+      #game-over p {
+        height: 10px;
+        font-size: 23px;
+        font-weight: bold;
+      }
+      #reset {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+        height: 15%;
+        border-radius: 0px;
+        background-color: rgb(255, 230, 0);
+        border: none;
+      }
+      #reset:hover {
+        background-color: rgb(216, 194, 0);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="game-over">
+      <h1>BEST SCORE</h1>
+      <p id="best">top</p>
+      <h1>YOUR SCORE</h1>
+      <p id="score">prev</p>
+      <button id="reset">Play again</button>
+    </div>
+  </body>
+  <script src="game.js"></script>
+</html>
